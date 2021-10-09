@@ -1,0 +1,114 @@
+.topBar{
+  @include maxWidth;
+  @include flexRow;
+  padding: 16px 8px;
+
+  & h1{
+    flex-grow: 1;
+    text-align: center;
+    align-self: center;
+    padding-right: 32px;
+  }
+}
+
+.container{
+  @include maxWidth;
+  @include flexCol;
+  background-color: $gray;
+  border-radius: 16px;
+  padding: 16px;
+  text-align: center;
+
+  & h2{
+    margin: 16px 0;
+  }
+
+  & .rows{
+    @include flexRow;
+    width: 70%;
+    margin: 0 auto;
+
+    & .numCol{
+      @include flexCol;
+      margin: 0 8px;
+    }
+
+    & .genPair{
+      @include flexRow;
+    }
+  }
+
+  & .rowsMono{
+    width: 50%;
+    padding-right: 32px;
+  }
+}
+
+
+.genCol{
+  & span{
+    background-color: black;
+    display: block;
+    width: 48px;
+    height: 48px;
+    margin: 1px;
+  }
+}
+
+.pair{
+  @include flexRow;
+  justify-content: space-around;
+  width: 70%;
+  margin: 16px auto;
+
+}
+
+.gen1A, .gen1C{
+  border-radius: 8px 0 0 0;
+}
+
+.gen1B, .gen1D{
+  border-radius: 0 8px 0 0;
+}
+
+.gen10A, .gen10C{
+  border-radius: 0 0 0 8px;
+}
+
+.gen10B, .gen10D{
+  border-radius: 0 0 8px 0;
+}
+
+@media only screen and (max-width: 540px){
+  .container {
+    padding: 8px;
+    border-radius: 0%;
+
+    & .rows{
+      width: 90%;
+    }
+
+    & .rowsMono{
+      width: 70%;
+    }
+  }
+
+  .genCol{
+    & span{
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  .pair{
+    width: 90%;
+  }
+}
+
+.yellow{
+  background-color: $yellow;
+}
+
+.blue{
+  background-color: $blue;
+}

@@ -1,0 +1,16 @@
+@mixin maxWidth{
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+@mixin flexRow{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+@mixin flexCol{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
