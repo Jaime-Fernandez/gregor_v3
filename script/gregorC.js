@@ -1,4 +1,5 @@
 let count = 50;
+let countDisplay = 0;
 
 let lha = 50;
 let lhb = 50;
@@ -77,6 +78,7 @@ function runGregor() {
   var likelihoods = [lha, lhb]
 
   count++;
+  countDisplay++;
 
   if ((count==71)) {
     lha=75;
@@ -465,5 +467,5 @@ function runGregor() {
     document.getElementById('locusD10').classList.remove('yellow');
   }
 
-  document.getElementById('counter').innerHTML="Individuo "+count;
+  document.getElementById('counter').innerHTML="Individuo "+countDisplay;
 }

@@ -13,7 +13,7 @@ body {
 }
 
 h1 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 700;
 }
 
@@ -45,7 +45,7 @@ i {
 
 @media only screen and (max-width: 540px) {
   h1 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 700;
   }
   h2 {
@@ -108,6 +108,16 @@ i {
   }
 }
 
+.vp {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 540px;
+  margin: 0 auto;
+  justify-content: flex-start;
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -162,13 +172,16 @@ footer {
   flex-direction: column;
   justify-content: space-around;
   max-width: 540px;
-  margin: 0 auto;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
+  text-align: center;
+  margin-top: auto;
+  padding: 32px;
 }
 
 footer p {
   margin-top: 32px;
+  line-height: 1.5;
 }
 
 @media only screen and (max-width: 540px) {

@@ -1,6 +1,14 @@
+.vp{
+  height: 100vh;
+  @include flexCol;
+  @include maxWidth;
+  justify-content: flex-start;
+}
+
 header{
   @include flexCol;
   @include maxWidth;
+
   justify-content: center;
   align-items: center;
 
@@ -41,12 +49,16 @@ header{
 
 footer{
   @include flexCol;
-  @include maxWidth;
-  justify-content: center;
+  max-width: 540px;
+  justify-content: flex-end;
   align-items: center;
+  text-align: center;
+  margin-top: auto;
+  padding: 32px;
 
   & p{
     margin-top: 32px;
+    line-height: 1.5;
   }
 }
 
