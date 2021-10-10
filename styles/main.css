@@ -94,6 +94,8 @@ i {
   padding: 16px;
   text-align: center;
   transition: 0.5s;
+  cursor: pointer;
+  user-select: none;
 }
 
 .button:hover {
@@ -173,6 +175,9 @@ footer p {
   header img {
     width: 75px;
     margin-top: 16px;
+  }
+  .menu a {
+    border-radius: 0%;
   }
 }
 
@@ -287,10 +292,10 @@ footer p {
   }
 }
 
-.yellow {
+span.yellow {
   background-color: #F7F052;
 }
 
-.blue {
+span.blue {
   background-color: #3C91E6;
 }

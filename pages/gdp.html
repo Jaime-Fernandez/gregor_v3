@@ -7,28 +7,28 @@
   <link rel="stylesheet" href="../styles/main.css">
   <title>Mendel App</title>
   <script src="https://kit.fontawesome.com/0927dae375.js" crossorigin="anonymous"></script>
-  <script src="../script/gregorA.js"></script>
+  <script src="../script/gregorB.js"></script>
 </head>
 <body>
   <nav class="topBar">
     <a href="../index.html" class="close"><i class="fas fa-times"></i></a>
-    <h1>Monohibridismo</h1>
+    <h1>Genética de Poblaciones</h1>
   </nav>
   <main>
     <section class="container">
     <h2 id="counter">Individuo 0</h2>
-    <div class="rows rowsMono">
+    <div class="rows">
       <div class="numCol">
-        <p>Locus 1</p>
-        <p>Locus 2</p>
-        <p>Locus 3</p>
-        <p>Locus 4</p>
-        <p>Locus 5</p>
-        <p>Locus 6</p>
-        <p>Locus 7</p>
-        <p>Locus 8</p>
-        <p>Locus 9</p>
-        <p>Locus 10</p>
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <p>6</p>
+        <p>7</p>
+        <p>8</p>
+        <p>9</p>
+        <p>10</p>
       </div>
       <div class="genPair">
         <div class="genCol">
@@ -57,6 +57,44 @@
         </div>
       </div>
       <div class="numCol">
+        <p>Locus 1</p>
+        <p>Locus 2</p>
+        <p>Locus 3</p>
+        <p>Locus 4</p>
+        <p>Locus 5</p>
+        <p>Locus 6</p>
+        <p>Locus 7</p>
+        <p>Locus 8</p>
+        <p>Locus 9</p>
+        <p>Locus 10</p>
+      </div>
+      <div class="genPair">
+        <div class="genCol">
+          <span id="locusC1"></span>
+          <span id="locusC2"></span>
+          <span id="locusC3"></span>
+          <span id="locusC4"></span>
+          <span id="locusC5"></span>
+          <span id="locusC6"></span>
+          <span id="locusC7"></span>
+          <span id="locusC8"></span>
+          <span id="locusC9"></span>
+          <span id="locusC10"></span>
+        </div>
+        <div class="genCol">
+          <span id="locusD1"></span>
+          <span id="locusD2"></span>
+          <span id="locusD3"></span>
+          <span id="locusD4"></span>
+          <span id="locusD5"></span>
+          <span id="locusD6"></span>
+          <span id="locusD7"></span>
+          <span id="locusD8"></span>
+          <span id="locusD9"></span>
+          <span id="locusD10"></span>
+        </div>
+      </div>
+      <div class="numCol">
         <p>1</p>
         <p>2</p>
         <p>3</p>
@@ -71,6 +109,7 @@
     </div>
     <div class=pair>
       <p>Par 1</p>
+      <p>Par 2</p>
     </div>
     </section>
     <div class="button" onclick="runGregor()">Generar Individuo</div>

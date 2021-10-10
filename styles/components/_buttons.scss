@@ -22,6 +22,8 @@
   padding: 16px;
   text-align: center;
   transition: 0.5s;
+  cursor: pointer;
+  user-select: none;
 
   &:hover{
     background-color: $accent;
