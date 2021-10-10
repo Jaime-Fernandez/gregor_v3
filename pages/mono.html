@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="../styles/main.css">
   <title>Mendel App</title>
   <script src="https://kit.fontawesome.com/0927dae375.js" crossorigin="anonymous"></script>
+  <script href="../script/mendel.js"></script>
 </head>
 <body>
   <nav class="topBar">
@@ -31,28 +32,28 @@
       </div>
       <div class="genPair">
         <div class="genCol">
-          <span class="gen1C"></span>
-          <span class="gen2C"></span>
-          <span class="gen3C"></span>
-          <span class="gen4C"></span>
-          <span class="gen5C"></span>
-          <span class="gen6C"></span>
-          <span class="gen7C"></span>
-          <span class="gen8C"></span>
-          <span class="gen9C"></span>
-          <span class="gen10C"></span>
+          <span id="locusA1"></span>
+          <span id="locusA2"></span>
+          <span id="locusA3"></span>
+          <span id="locusA4"></span>
+          <span id="locusA5"></span>
+          <span id="locusA6"></span>
+          <span id="locusA7"></span>
+          <span id="locusA8"></span>
+          <span id="locusA9"></span>
+          <span id="locusA10"></span>
         </div>
         <div class="genCol">
-          <span class="gen1D"></span>
-          <span class="gen2D"></span>
-          <span class="gen3D"></span>
-          <span class="gen4D"></span>
-          <span class="gen5D"></span>
-          <span class="gen6D"></span>
-          <span class="gen7D"></span>
-          <span class="gen8D"></span>
-          <span class="gen9D"></span>
-          <span class="gen10D"></span>
+          <span id="locusB1"></span>
+          <span id="locusB2"></span>
+          <span id="locusB3"></span>
+          <span id="locusB4"></span>
+          <span id="locusB5"></span>
+          <span id="locusB6"></span>
+          <span id="locusB7"></span>
+          <span id="locusB8"></span>
+          <span id="locusB9"></span>
+          <span id="locusB10"></span>
         </div>
       </div>
       <div class="numCol">
@@ -72,8 +73,7 @@
       <p>Par 1</p>
     </div>
     </section>
-    <div class="button">Generar Individuo</div>
+    <div class="button" onclick="runGregor()">Generar Individuo</div>
   </main>
-  <script href="../script/mendel.js"></script>
 </body>
 </html>

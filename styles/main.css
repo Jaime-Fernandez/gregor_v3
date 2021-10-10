@@ -26,10 +26,10 @@ p {
 }
 
 a {
+  text-decoration: none;
+  color: #FFF;
   font-size: 1.5rem;
   font-weight: 700;
-  color: #FFF;
-  text-decoration: none;
 }
 
 i {
@@ -83,6 +83,9 @@ i {
 }
 
 .button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   max-width: 540px;
   margin: 0 auto;
   margin-top: 16px;
@@ -90,7 +93,6 @@ i {
   border-radius: 16px;
   padding: 16px;
   text-align: center;
-  border: none;
   transition: 0.5s;
 }
 
@@ -101,6 +103,76 @@ i {
 @media only screen and (max-width: 540px) {
   .button {
     border-radius: 0%;
+  }
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 540px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+header img {
+  width: 100px;
+  margin-top: 32px;
+}
+
+header h1 {
+  margin: 16px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+.menu a {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  justify-content: center;
+  margin-top: 16px;
+  background-color: #323232;
+  border-radius: 16px;
+  padding: 16px;
+  transition: 0.5s;
+}
+
+.menu a i {
+  font-size: 1.5rem;
+  margin-left: 16px;
+}
+
+.menu a:hover {
+  background-color: #DD6031;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 540px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  margin-top: 32px;
+}
+
+@media only screen and (max-width: 540px) {
+  header img {
+    width: 75px;
+    margin-top: 16px;
   }
 }
 
@@ -179,19 +251,19 @@ i {
   margin: 16px auto;
 }
 
-.gen1A, .gen1C {
+#locusA1, #locusC1 {
   border-radius: 8px 0 0 0;
 }
 
-.gen1B, .gen1D {
+#locusB1, #locusD1 {
   border-radius: 0 8px 0 0;
 }
 
-.gen10A, .gen10C {
+#locusA10, #locusC10 {
   border-radius: 0 0 0 8px;
 }
 
-.gen10B, .gen10D {
+#locusB10, #locusD10 {
   border-radius: 0 0 8px 0;
 }
 

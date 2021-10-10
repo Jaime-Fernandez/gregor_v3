@@ -14,13 +14,13 @@
 }
 
 .button{
+  @include flexRow;
   @include maxWidth;
   margin-top: 16px;
   background-color: $gray;
   border-radius: 16px;
   padding: 16px;
   text-align: center;
-  border: none;
   transition: 0.5s;
 
   &:hover{

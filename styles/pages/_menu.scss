@@ -1,0 +1,58 @@
+header{
+  @include flexCol;
+  @include maxWidth;
+  justify-content: center;
+  align-items: center;
+
+  & img{
+    width: 100px;
+    margin-top: 32px;
+  }
+
+  & h1{
+    margin: 16px;
+  }
+}
+
+.menu{
+  @include flexCol;
+  @include maxWidth;
+
+  & a{
+    @include flexRow;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+    background-color: $gray;
+    border-radius: 16px;
+    padding: 16px;
+    transition: 0.5s;
+
+    & i{
+      font-size: 1.5rem;
+      margin-left: 16px;
+    }
+
+    &:hover{
+      background-color: $accent;
+    }
+  }
+}
+
+footer{
+  @include flexCol;
+  @include maxWidth;
+  justify-content: center;
+  align-items: center;
+
+  & p{
+    margin-top: 32px;
+  }
+}
+
+@media only screen and (max-width: 540px){
+  header img{
+    width: 75px;
+    margin-top: 16px;
+  }
+}
