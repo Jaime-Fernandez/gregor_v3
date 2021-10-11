@@ -269,19 +269,19 @@ footer p {
   margin: 16px auto;
 }
 
-#locusA1, #locusC1 {
+#A0, #C0 {
   border-radius: 8px 0 0 0;
 }
 
-#locusB1, #locusD1 {
+#B0, #D0 {
   border-radius: 0 8px 0 0;
 }
 
-#locusA10, #locusC10 {
+#A9, #C9 {
   border-radius: 0 0 0 8px;
 }
 
-#locusB10, #locusD10 {
+#B9, #D9 {
   border-radius: 0 0 8px 0;
 }
 
