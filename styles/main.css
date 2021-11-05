@@ -33,7 +33,7 @@ a {
 }
 
 i {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .button {
@@ -78,10 +78,6 @@ i {
   transition: 0.5s;
 }
 
-.close:hover {
-  background-color: #DD6031;
-}
-
 .button {
   display: flex;
   flex-direction: row;
@@ -89,7 +85,7 @@ i {
   max-width: 540px;
   margin: 0 auto;
   margin-top: 16px;
-  background-color: #323232;
+  background-color: #DD6031;
   border-radius: 16px;
   padding: 16px;
   text-align: center;
@@ -98,13 +94,21 @@ i {
   user-select: none;
 }
 
-.button:hover {
-  background-color: #DD6031;
-}
-
 @media only screen and (max-width: 540px) {
   .button {
     border-radius: 0%;
+  }
+}
+
+@media (hover) {
+  .button {
+    background-color: #323232;
+  }
+  .button:hover {
+    background-color: #DD6031;
+  }
+  .close:hover {
+    background-color: #DD6031;
   }
 }
 
@@ -163,8 +167,10 @@ header h1 {
   margin-left: 16px;
 }
 
-.menu a:hover {
-  background-color: #DD6031;
+@media (hover) {
+  .menu a:hover {
+    background-color: #DD6031;
+  }
 }
 
 footer {

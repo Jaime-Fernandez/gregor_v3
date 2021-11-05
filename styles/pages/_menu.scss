@@ -40,11 +40,13 @@ header{
       font-size: 1.5rem;
       margin-left: 16px;
     }
+  }
+}
 
-    &:hover{
+@media (hover){
+  .menu a:hover{
       background-color: $accent;
     }
-  }
 }
 
 footer{

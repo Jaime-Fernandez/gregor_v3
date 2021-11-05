@@ -7,31 +7,37 @@
   justify-content: center;
   text-align: center;
   transition: 0.5s;
-
-  &:hover{
-    background-color: $accent;
-  }
 }
 
 .button{
   @include flexRow;
   @include maxWidth;
   margin-top: 16px;
-  background-color: $gray;
+  background-color: $accent;
   border-radius: 16px;
   padding: 16px;
   text-align: center;
   transition: 0.5s;
   cursor: pointer;
   user-select: none;
-
-  &:hover{
-    background-color: $accent;
-  }
 }
 
 @media only screen and (max-width: 540px){
   .button{
     border-radius: 0%;
+  }
+}
+
+@media (hover){
+  .button{
+    background-color: $gray;
+
+      &:hover{
+        background-color: $accent;
+      }
+  }
+
+  .close:hover{
+    background-color: $accent;
   }
 }
